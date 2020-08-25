@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
 
-namespace SmartSchool.WebAPI.Models
+namespace PeopleDatabase.WebAPI.Models
 {
   public class Person
   {
-    public Person(int id, string firstName, string lastName, string phoneNumber, string email, DateTime birthDate, bool isActive)
+    public Person(int id, string firstName, string lastName, string phoneNumber, string email, DateTime birthDate)
     {
       Id = id;
       FirstName = firstName;
@@ -13,7 +13,6 @@ namespace SmartSchool.WebAPI.Models
       PhoneNumber = phoneNumber;
       Email = email;
       BirthDate = birthDate;
-      IsActive = isActive;
     }
 
     public int Id { get; set; }
@@ -22,6 +21,6 @@ namespace SmartSchool.WebAPI.Models
     public string PhoneNumber { get; set; }
     public string Email { get; set; }
     public DateTime BirthDate { get; set; }
-    public bool IsActive { get; set; }
+    public bool IsActive { get; set; } = true;
   }
 }

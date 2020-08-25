@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "CadastroPessoas.WebAPI": {
+    "PeopleDatabase.WebAPI": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "/",

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroPessoas.WebAPI", "CadastroPessoas.WebAPI\CadastroPessoas.WebAPI.csproj", "{4F0160C9-C02B-461B-9073-18BFBF42D72E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleDatabase.WebAPI", "PeopleDatabase.WebAPI\PeopleDatabase.WebAPI.csproj", "{4F0160C9-C02B-461B-9073-18BFBF42D72E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
