@@ -3,6 +3,7 @@
     "ASPNETCORE",
     "VSOFTWARE",
     "mssql",
+    "nvarchar",
     "sqldata"
   ]
 }
