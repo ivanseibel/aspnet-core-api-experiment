@@ -12,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using PeopleDatabase.WebAPI.Data;
 using Microsoft.EntityFrameworkCore;
+using AutoMapper;
 
 namespace PeopleDatabase.WebAPI
 {
@@ -33,7 +34,16 @@ namespace PeopleDatabase.WebAPI
         )
       );
         
-      services.AddControllers();
+      services
+        .AddControllers()
+        .AddNewtonsoftJson(options => 
+          options.SerializerSettings.ReferenceLoopHandling = 
+          Newtonsoft.Json.ReferenceLoopHandling.Ignore
+        );
+
+      services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+      services.AddScoped<IPeopleRepository, PeopleRepository>();
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

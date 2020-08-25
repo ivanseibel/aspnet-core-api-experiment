@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PeopleDatabase.WebAPI.Data;
 
-namespace CadastroPessoas.WebAPI.Migrations
+namespace PeopleDatabase.WebAPI.Migrations
 {
     [DbContext(typeof(APIContext))]
     [Migration("20200825001709_Initialization")]

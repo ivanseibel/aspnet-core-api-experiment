@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PeopleDatabase.WebAPI.Data;
 
-namespace CadastroPessoas.WebAPI.Migrations
+namespace PeopleDatabase.WebAPI.Migrations
 {
     [DbContext(typeof(APIContext))]
     partial class APIContextModelSnapshot : ModelSnapshot

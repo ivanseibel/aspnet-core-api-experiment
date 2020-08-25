@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace CadastroPessoas.WebAPI.Migrations
+namespace PeopleDatabase.WebAPI.Migrations
 {
     public partial class Initialization : Migration
     {
