@@ -1,5 +1,3 @@
-using System;
-
 namespace PeopleDatabase.WebAPI.Dtos
 {
   public class PersonDto

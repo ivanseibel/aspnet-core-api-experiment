@@ -4,12 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PeopleDatabase.WebAPI.Data;
 
 namespace PeopleDatabase.WebAPI.Migrations
 {
-    [DbContext(typeof(APIContext))]
+  [DbContext(typeof(APIContext))]
     [Migration("20200825001709_Initialization")]
     partial class Initialization
     {

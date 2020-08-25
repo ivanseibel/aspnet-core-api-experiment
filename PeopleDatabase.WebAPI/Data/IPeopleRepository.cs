@@ -1,5 +1,4 @@
 using PeopleDatabase.WebAPI.Models;
-using PeopleDatabase.WebAPI.Dtos;
 
 namespace PeopleDatabase.WebAPI.Data
 {

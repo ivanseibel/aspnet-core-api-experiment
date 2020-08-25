@@ -1,10 +1,10 @@
 using System;
-using System.Collections.Generic;
 
 namespace PeopleDatabase.WebAPI.Models
 {
   public class Person
   {
+    public Person() {}
     public Person(int id, string firstName, string lastName, string phoneNumber, string email, DateTime birthDate)
     {
       Id = id;

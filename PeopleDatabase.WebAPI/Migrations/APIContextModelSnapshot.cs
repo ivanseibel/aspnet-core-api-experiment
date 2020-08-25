@@ -3,12 +3,11 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PeopleDatabase.WebAPI.Data;
 
 namespace PeopleDatabase.WebAPI.Migrations
 {
-    [DbContext(typeof(APIContext))]
+  [DbContext(typeof(APIContext))]
     partial class APIContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
