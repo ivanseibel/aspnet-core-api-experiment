@@ -1,8 +1,6 @@
 using System.Collections.Generic;
-using System.Linq;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using PeopleDatabase.WebAPI.Data;
 using PeopleDatabase.WebAPI.Dtos;
 using PeopleDatabase.WebAPI.Models;
@@ -48,6 +46,11 @@ namespace Controllers
     public IActionResult Post(PersonRegisterDto receivedPerson)
     {
       var person = _mapper.Map<Person>(receivedPerson);
+
+      var personValidator = new PersonValidator();
+      var validationResults = personValidator.Validate(person);
+
+      if (!validationResults.IsValid) return BadRequest(validationResults);
       
       if (_peopleRepository.Create(person))
       {
@@ -66,6 +69,11 @@ namespace Controllers
       if (personExists == null) return NotFound("Person not found");
 
       var person = _mapper.Map<Person>(receivedPerson);
+
+      var personValidator = new PersonValidator();
+      var validationResults = personValidator.Validate(person);
+
+      if (!validationResults.IsValid) return BadRequest(validationResults);
     
       if (_peopleRepository.Update(person))
       {
